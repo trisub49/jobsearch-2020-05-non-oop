@@ -1,0 +1,613 @@
+@font-face 
+{
+    font-family: "Inconsolata";
+    src: url(../fonts/Inconsolata.ttf) format("truetype");
+}
+html
+{
+    height: 100%;
+}
+body
+{
+    background-image: url(../img/jobseeker.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "Inconsolata", monospace;
+}
+
+/*                                      [ Főmenü formázások ]                                       */
+
+#menu
+{
+    position: fixed;
+    z-index: 99;
+    background-color: rgba(0, 0, 0,0.75);
+    width: 100%;
+    text-transform: uppercase;
+}
+#menu>ul
+{
+    padding: 0;
+    margin: 0 0;
+}
+.m_style:hover
+{
+    transition: border-bottom 1.5s;
+    border-bottom: 2.5px solid rgba(234, 234, 250,0.9);
+}
+.m_style
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px darkslategray;
+    border-bottom: 2.5px solid rgba(0, 0, 0,0.0);
+}
+
+/*                                      [ Fő dobozok formázásai ]                                       */
+
+#logo
+{
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    text-align: right;
+    color: rgb(255, 255, 153);
+    text-shadow: 2px 2px darkslategray;
+    padding-right: 10px;
+}
+#container
+{
+    padding-top: 70px;
+    padding-bottom: 15px;
+    border-collapse: collapse;
+    min-height: 80%;
+}
+#page
+{
+    float: left;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(234, 234, 250,0.8);
+    border: 0.5px solid rgba(234, 234, 250,0.3);
+    text-align: justify;
+    border-radius: 3px 3px;
+}
+#makemoney
+{
+    float: left;
+    padding: 15px;
+    background-color: rgba(234, 234, 250,0.9);
+    border: 0.5px solid rgba(234, 234, 250,0.3);
+    border-radius: 3px 3px;
+}
+#footer
+{
+    padding: 10px;
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    text-align: center;
+}
+.c_content
+{
+    width: 75%;
+    margin: auto;
+}
+
+/*                                      [ Profil megjelenési formázások ]                                       */
+
+#showprofile
+{
+    background-color: white;
+    font-weight: bold;
+    font-size: small;
+    border: 0.5px solid rgba(0,0,0,0.3);
+    padding: 10px;
+    margin-bottom: 15px;
+    line-height: 200%;
+    border-radius: 2px 2px;
+}
+#profilepic
+{
+    border: 0.75px solid rgba(0,0,0,0.3);
+    height: auto;
+    width: 110px;
+}
+.profilepic_list
+{
+    border: 0.75px solid rgba(0,0,0,0.3);
+    height: auto;
+    width: 75px;
+    float: left;
+    margin-right: 10px;
+}
+#profilediv
+{
+    width: 125px;
+    float: left;
+    padding-right: 10px;
+}
+#profilediv2
+{
+    float: left;
+    padding-bottom: 15px;
+}
+#profextra
+{
+    clear: both;
+}
+#profilediv3
+{
+    clear: both;
+}
+#profilediv4
+{
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: rgb(51,102,187);
+    font-weight: 500;
+}
+#profilediv5
+{
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: rgb(51,102,187);
+    font-weight: 500;
+}
+.data_1
+{
+    padding-right: 15px;
+}
+.data_2
+{
+    color: rgb(51,102,187);
+    font-weight: bold;
+}
+#c_showprofile
+{
+    background-color: white;
+    font-weight: bold;
+    border: 0.5px solid rgba(0,0,0,0.3);
+    padding: 10px;
+    margin-bottom: 15px;
+    line-height: 200%;
+    border-radius: 2px 2px;
+}
+#c_profilepic
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#c_profilediv
+{
+    width: 100%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+#c_profilediv2
+{
+    padding-right: 20px;
+    padding-bottom: 10px;
+    clear: both;
+}
+#c_profilediv3
+{
+    clear: both;
+}
+#c_profilediv4
+{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: rgb(51,102,187);
+    font-weight: 500;
+}
+.signers_list
+{
+    font-weight: bold;
+    clear: both;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 0.5px solid rgba(0,0,0,0.3);
+}
+.signers_list:hover
+{
+    background-color: rgba(179, 217, 255,0.3);
+}
+.return_sign
+{
+    background-color: beige;
+    padding: 15px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5px solid rgba(0,0,0,0.3);
+    border-radius: 3px 3px;
+}
+
+/*                                  [ Munka adatok formázásai ]                                     */
+
+.job_link,.job_link:hover
+{
+    text-decoration: none;
+}
+.job_all
+{
+    padding: 5px;
+    padding-bottom: 5px;
+    clear: both;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 0.5px solid rgba(0,0,0,0.3);
+}
+.job_all:hover
+{
+    background-color: rgba(179, 217, 255,0.3);
+}
+.job_all_2
+{
+    padding: 5px;
+    padding-bottom: 5px;
+    clear: both;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 0.5px solid rgba(0,0,0,0.3);
+}
+.job_header
+{
+    font-size: large;
+    padding: 10px;
+    border-bottom: 0.5px solid rgba(0,0,0,0.6);
+}
+.job_regtime
+{
+    float: right;
+}
+.job_name
+{
+    color: rgb(51,102,187);
+    text-transform: uppercase;
+}
+.job_content
+{
+    margin: 15px;
+    border-left: rgba(0,0,0,0.3);
+    clear: both;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 150%;
+}
+.job_bla
+{
+    padding-right: 10px;
+    text-align: right;
+}
+.job_company
+{
+    color: rgb(51,102,187);
+}
+.job_deadline
+{
+    color: rgb(255, 51, 51);
+}
+.job_picture
+{
+    width: 100px;
+    float: right;
+}
+.company_picture
+{
+    width: 100%;
+}
+.iex
+{
+    padding-right: 10px;
+}
+.job_desc
+{
+    font-weight: 500;
+    border-top: 0.5px solid rgba(0,0,0,0.6);
+    padding: 10px;
+    text-align: left;
+    border-bottom: 0.5px solid rgba(0,0,0,0.6);
+    background-color: rgba(234, 234, 250,0.9);
+}
+.job_desc_2
+{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.comp_desc
+{
+    padding: 10px;
+    font-weight: 300;
+}
+.joblister
+{
+    width: 100%;
+    padding: 20px;
+    color: black;
+}
+.jobs_table
+{
+    width: 100%;
+    border: 0.5px solid rgba(0,0,0,0.3);
+    border-radius: 2px 2px;
+    background-color: rgba(234, 234, 250,0.9);
+    font-weight: 500;
+}
+.job_link_2,.job_link_2:hover
+{
+    text-decoration: none;
+    color:  rgb(51,102,187);
+    font-weight: bold;
+}
+.job_waityet
+{
+    color: orangered;
+    font-weight: bold;
+}
+.job_interview
+{
+    color: green;
+    font-weight: bold;
+}
+.job_declined
+{
+    color: red;
+    font-weight: bold;
+}
+.jobs_td
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    width: 33.3%;
+    border-collapse: collapse;
+    border-bottom: 0.5px solid rgba(0,0,0,0.3);
+}
+
+/*                                      [ Jelentkezések és saját hirdetések ]                               */
+
+.sign_background
+{
+    border: 0.5px solid rgba(0,0,0,0.3);
+    border-radius: 2px 2px;
+    background-color: white;
+    padding: 10px;
+}
+
+/*                                      [ Szerver üzenetek formázásai ]                                     */
+
+.err_msg
+{
+    color: red;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.msg_box
+{
+    font-weight: bold;
+    color:  rgb(51,102,187);
+    padding-bottom: 15px;
+}
+.little_ch
+{
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+    font-size: small;
+    color: black;
+    width: 85px;
+    border: 0.5px solid rgba(0,0,0,0.3);
+    border-radius: 5px 5px;
+}
+.little_ch:hover
+{
+    transition: background-color 1.0s;
+    background-color: rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+/*                                      [ Űrlap formázások ]                                        */
+
+#form_register_1>input[type=button]
+{
+    padding: 7.5px;
+    border: 0.5px solid  rgba(0,0,0,0.3);
+    width: 48%;
+    border-radius: 5px 5px;
+    font-weight: bold;
+}
+#form_add_job_3>input[type=button]
+{
+    font-weight: bold;
+    width: 48%;
+    padding: 5px;
+    border: 0.5px solid  rgba(0,0,0,0.3);
+    border-radius: 5px 5px;
+    margin-bottom: 7.5px;
+}
+#form_add_job_3>input[type=button]:hover
+{
+    transition: background-color 1.0s;
+    background-color: rgba(0,0,0,0.3);
+}
+#form_edit_job_2>input[type=button]
+{
+    font-weight: bold;
+    width: 48%;
+    padding: 5px;
+    border: 0.5px solid  rgba(0,0,0,0.3);
+    border-radius: 5px 5px;
+    margin-bottom: 7.5px;
+}
+#del_job>input[type=button]
+{
+    font-weight: bold;
+    width: 48%;
+    padding: 5px;
+    border: 0.5px solid  rgba(0,0,0,0.3);
+    border-radius: 5px 5px;
+    margin-bottom: 7.5px;
+}
+#del_job>input[type=button]:hover
+{
+    transition: background-color 1.0s;
+    background-color: rgba(0,0,0,0.3);
+}
+#form_edit_job_2>input[type=button]:hover
+{
+    transition: background-color 1.0s;
+    background-color: rgba(0,0,0,0.3);
+}
+#form_register_1>input[type=button]:hover
+{
+    transition: background-color 1.0s;
+    background-color: rgba(0,0,0,0.3);
+}
+#form_add_job_3>input[type=button]:hover
+{
+    transition: background-color 1.0s;
+    background-color: rgba(0,0,0,0.3);
+}
+input[type=email],input[type=password],input[type=text],input[type=date],input[type=search],input[type=tel],input[list]
+{
+    width: 100%;
+    padding: 5px;
+    border: 0.5px solid  rgba(0,0,0,0.3);
+    border-radius: 3px 3px;
+    margin-bottom: 7.5px;
+}
+input[type=date],input[type=tel]
+{
+    width: 50%;
+}
+input[type=submit]
+{
+    padding: 5px;
+    border: 0.5px solid  rgba(0,0,0,0.3);
+    border-radius: 5px 5px;
+    font-weight: bold;
+    width: 50%;
+}
+#form_chjobs>input[type=submit]
+{
+    float: right;
+    padding: 0 0;
+    width: 100px;
+}
+#form_login>input[type=submit]
+{
+    width: 100%
+}
+input[type=submit]:hover
+{
+    transition: background-color 1.0s;
+    background-color: rgba(0,0,0,0.3);
+}
+.submitholder
+{
+    text-align: center;
+}
+#fjob_desc
+{
+    width: 100%;
+    height: 200px;
+}
+#r_desc
+{
+    width: 100%;
+    height: 200px;
+}
+label {
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+}
+.schools_tr
+{
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    font-size: small;
+    font-weight: bold;
+    border-collapse: collapse;
+    border-bottom: 0.5px solid rgba(0,0,0,0.3);
+}
+.schools_tr>td
+{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.schools_tr:last-child
+{
+    border-bottom: none;
+}
+
+#fileup>input[type=submit]
+{
+    font-size: small;
+    width: 115px;
+    padding: 3px;
+    border-radius: 0;
+}
+#fileup>input[type=file]
+{
+    font-weight: bold;
+    font-size: small;
+    padding: 0 0;
+    width: auto;
+}
+#filedel>input[type=submit]
+{
+    font-size: small;
+    width: 110px;
+    padding: 0;
+    border-radius: 0;
+}
+/*
+#fileup_2>input[type=file]
+{
+    border: 0.5px solid  rgba(0,0,0,0.3);
+    border-collapse: collapse;
+    font-weight: bold;
+    font-size: small;
+    padding: 0 0;
+    margin: 0 0;
+    width: auto;
+}
+#fileup_2>input[type=submit]
+{
+    font-size: small;
+    width: 125px;
+    padding: 3px;
+    border-radius: 0;
+}
+*/
